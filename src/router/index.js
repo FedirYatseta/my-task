@@ -1,7 +1,7 @@
 import {
     createBrowserRouter,
-
 } from "react-router-dom";
+import React from "react";
 import App from "../App";
 import Post from "../components/post";
 import Album from "../components/album";

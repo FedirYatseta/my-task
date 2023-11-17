@@ -10,11 +10,6 @@ html,
 #root {
   height: 100%;
 }
-
-.imageAlbum {
-  width: 50px;
-  display: inline-block !important;
-  visibility: visible !important;
-  height: 50px !important;
-  min-height: fit-content !important;
+* {
+  background-color: #cdcdcd;
 }

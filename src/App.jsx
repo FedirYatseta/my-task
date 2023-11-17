@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Link } from 'react-router-dom';
 import useSortAndFilter from './hooks';
+import React from 'react';
 function App() {
   const [users, setUsers] = useState([]);
 
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+
       <div>
         <input style={{ padding: '5px', marginRight: '10px' }}
           type="text"
@@ -29,6 +31,7 @@ function App() {
           <option value='desc'>Спадання</option>
           <option value='asc'>Зростання</option>
         </select>
+
         <div style={{ padding: '5px', }}>
           {sortedData.map((item, index) => (
             <div style={{ padding: '10px', display: 'flex', flexDirection: 'column', }} key={index}>
