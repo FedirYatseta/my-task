@@ -19,6 +19,7 @@ const Album = () => {
     return (
         <div style={{ padding: '10px' }}>
             <h2>Album</h2>
+
             {post.map((item, index) =>
                 <div key={index} style={{ padding: '10px', border: '1px solid #cdcdcd', marginBottom: '5px', }}>
                     <div style={{ color: '#000', fontSize: '20px', fontWeight: '600', margin: '5px' }}>{item.title}</div>

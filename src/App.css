@@ -1,9 +1,11 @@
 .App {
   height: 100%;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  transition: "margin-right 2s ease-in-out";
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
 }
 .btnLink {
   border: 1px solid #cdcdcd;
@@ -16,4 +18,9 @@
 
 .linkGroupe {
   display: flex;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
 }

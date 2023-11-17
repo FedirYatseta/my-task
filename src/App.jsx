@@ -19,8 +19,7 @@ function App() {
 
   return (
     <div className="App">
-
-      <div>
+      <div className='container'>
         <input style={{ padding: '5px', marginRight: '10px' }}
           type="text"
           placeholder="Пошук за іменем"
@@ -31,18 +30,17 @@ function App() {
           <option value='desc'>Спадання</option>
           <option value='asc'>Зростання</option>
         </select>
-
-        <div style={{ padding: '5px', }}>
+        <ol style={{ padding: '5px', }}>
           {sortedData.map((item, index) => (
-            <div style={{ padding: '10px', display: 'flex', flexDirection: 'column', }} key={index}>
-              <div style={{ color: '#000', padding: '10px', fontSize: '18px', }}>{item.name}</div>
+            <li key={index}>
+              <div style={{ color: '#000', padding: '10px', fontSize: '18px', fontWeight: 600 }}>{item.name}</div>
               <div className='linkGroup'>
                 <Link className='btnLink' to={`post/${item.id}`}>Переглянути пости</Link>
                 <Link className='btnLink' to={`album/${item.id}`}>Переглянути альбоми</Link>
               </div>
-            </div>
+            </li>
           ))}
-        </div>
+        </ol>
       </div>
     </div>
   );
